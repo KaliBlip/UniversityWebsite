@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - David Institution of Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="registration.html">Registration</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <h2>Register Now</h2>
+        <p>Fill out the form below to enroll at David Institution of Learning.</p>
+
+        <form action="submit_registration.php" method="POST" class="registration-form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="last-school">Last School Attended:</label>
+                <input type="text" id="last-school" name="last-school" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fathers-name">Father's Name:</label>
+                <input type="text" id="fathers-name" name="fathers-name" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 David Institution of Learning. All rights reserved.
+    </footer>
+</body>
+</html>
